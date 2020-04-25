@@ -17,7 +17,17 @@ public class Main {
         locations.put(4, new Location(4, "You are in the backyard stargazing."));
         locations.put(5, new Location(5, "You are in your parents bedroom looking at your phone."));
 
-
+        int loc =1;
+        while (true) {
+            System.out.println(locations.get(loc).getDescription());
+            if (loc == 0) {
+                break;
+            }
+            loc = scanner.nextInt();
+            if (!locations.containsKey(loc)) {
+                System.out.println("You cannot go that way");
+            }
+        }
     }
 }
 

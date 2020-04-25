@@ -22,7 +22,7 @@ public class Location {
         return locationID;
     }
 
-    public String getDedscription() {
+    public String getDescription() {
         return description;
     }
 
