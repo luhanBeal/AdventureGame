@@ -55,7 +55,7 @@ public class Main {
                 loc = exits.get(direction);
             } else {
                 System.out.println("You cannot go in that direction.");
-
+            }
         }
     }
 }
